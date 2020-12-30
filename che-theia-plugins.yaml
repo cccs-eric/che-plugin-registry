@@ -1,7 +1,7 @@
 version: 1.0.0
 plugins:
 
-  # github/vscode-pull-request-github/0.20.0
+  # github/vscode-pull-request-github
   - repository:
       url: https://github.com/microsoft/vscode-pull-request-github
       revision: 0.20.0
@@ -10,7 +10,7 @@ plugins:
     extensions:
       - https://github.com/microsoft/vscode-pull-request-github/releases/download/0.20.0/vscode-pull-request-github-0.20.0.vsix
 
-  # ms-vscode/node-debug2/1.42.5
+  # ms-vscode/node-debug2
   - repository:
       url: https://github.com/Microsoft/vscode-node-debug2
       revision: v1.42.5
@@ -24,7 +24,7 @@ plugins:
       - https://open-vsx.org/api/ms-vscode/node-debug2/1.42.5/file/ms-vscode.node-debug2-1.42.5.vsix
       - https://open-vsx.org/api/ms-vscode/node-debug/1.44.8/file/ms-vscode.node-debug-1.44.8.vsix
 
-  # vscode/typescript-language-features/1.49.3
+  # vscode/typescript-language-features
   - repository:
       url: https://github.com/Microsoft/vscode
       revision: 1.49.3
@@ -40,7 +40,7 @@ plugins:
     extensions:
       - https://open-vsx.org/api/vscode/typescript-language-features/1.49.3/file/vscode.typescript-language-features-1.49.3.vsix
 
-  # bazelbuild/vscode-bazel/0.3.0
+  # bazelbuild/vscode-bazel
   - repository:
       url: https://github.com/bazelbuild/vscode-bazel
       revision: 0.3.0
@@ -56,7 +56,7 @@ plugins:
     extensions:
       - https://github.com/bazelbuild/vscode-bazel/releases/download/0.3.0/vscode-bazel-0.3.0.vsix
 
-  # octref/vetur/0.26.1
+  # octref/vetur
   - repository:
       url: https://github.com/vuejs/vetur
       revision: v0.26.1
@@ -71,14 +71,14 @@ plugins:
     extensions:
       - https://github.com/vuejs/vetur/releases/download/v0.26.1/vetur-0.26.1.vsix
 
-  # vscodevim/vim/1.16.0
+  # vscodevim/vim
   - repository:
       url: https://github.com/VSCodeVim/Vim
       revision: v1.16.0
     extensions:
       - https://github.com/VSCodeVim/Vim/releases/download/v1.16.0/vim-1.16.0.vsix
 
-  # testthedocs/vale/0.9.1
+  # testthedocs/vale
   - repository:
       url: https://github.com/testthedocs/vscode-vale
       revision: 0.9.1
@@ -91,7 +91,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-vale/vale-0.9.1.vsix
 
-  # eclipse-cdt/cdt-vscode/0.0.7
+  # eclipse-cdt/cdt-vscode
   - repository:
       url: https://github.com/eclipse-cdt/cdt-vscode
       revision: 2edfc3a3474bc7a732014e1a4631561b991f845a
@@ -107,7 +107,7 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/cdt-gdb-vscode/cdt-gdb-vscode-0.0.91-2cbbb8.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-clangd/vscode-clangd-0.1.5-562d00.vsix
 
-  # bmewburn/vscode-intelephense-client/1.5.4
+  # bmewburn/vscode-intelephense-client
   - repository:
       url: https://github.com/bmewburn/vscode-intelephense
       revision: v1.5.4
@@ -120,7 +120,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-intelephense/vscode-intelephense-client-1.5.4.vsix
 
-  # ms-python/python/2020.7.94776
+  # ms-python/python
   - repository:
       url: https://github.com/Microsoft/vscode-python
       revision: 2020.7.94776
@@ -134,7 +134,7 @@ plugins:
     extensions:
       - https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix
 
-  # joaompinto/asciidoctor-vscode/2.7.7
+  # joaompinto/asciidoctor-vscode
   - repository:
       url: https://github.com/asciidoctor/asciidoctor-vscode
       revision: v2.7.7
@@ -151,7 +151,7 @@ plugins:
         - name: documents
           path: "/documents"
 
-  # eamodio/gitlens/10.2.1
+  # eamodio/gitlens
   - repository:
       url: https://github.com/eamodio/vscode-gitlens
       revision: v10.2.1
@@ -160,7 +160,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-gitlens/gitlens-10.2.1.vsix
 
-  # golang/go/0.16.1
+  # golang/go
   - repository:
       url: https://github.com/golang/vscode-go
       revision: v0.16.1
@@ -177,7 +177,7 @@ plugins:
     extensions:
       - https://github.com/golang/vscode-go/releases/download/v0.16.1/go-0.16.1.vsix
 
-  # haskell/haskell/1.1.0
+  # haskell/haskell
   - repository:
       url: https://github.com/haskell/vscode-haskell
       revision: 1.1.0
@@ -187,7 +187,7 @@ plugins:
     sidecar:
       directory: haskell
       name: vscode-haskell
-      memoryLimit: 3072Mi
+      memoryLimit: 3Gi
       cpuLimit: 500m
       cpuRequest: 200m
     extensions:
@@ -195,7 +195,7 @@ plugins:
       - https://open-vsx.org/api/justusadam/language-haskell/3.3.0/file/justusadam.language-haskell-3.3.0.vsix
       - https://open-vsx.org/api/gattytto/phoityne-vscode/0.0.28/file/gattytto.phoityne-vscode-0.0.28.vsix
 
-  # dart-code/flutter/3.14.1
+  # dart-code/flutter
   - repository:
       url: https://github.com/dart-code/flutter
       revision: v3.14.1
@@ -210,7 +210,7 @@ plugins:
       - https://github.com/gattytto/dart-code/releases/download/v3.15.0-che/dart-code-3.15.0-dev-realpathSync.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
 
-  # redhat/vscode-camelk/0.0.19
+  # redhat/vscode-camelk
   - repository:
       url: https://github.com/camel-tooling/vscode-camelk
       revision: 0.0.19
@@ -225,7 +225,7 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-kubernetes-tools/vscode-kubernetes-tools-1.2.1.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.11.1.vsix
 
-  # redhat/quarkus-java11/1.7.0
+  # redhat/quarkus-java11
   - id: redhat/quarkus-java11
     repository:
       url: https://github.com/redhat-developer/vscode-quarkus
@@ -246,7 +246,7 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-java-debug/vscode-java-debug-0.26.0.vsix
       - https://open-vsx.org/api/vscjava/vscode-java-test/0.24.0/file/vscjava.vscode-java-test-0.24.0.vsix
 
-  # redhat/quarkus-java8/1.5.0
+  # redhat/quarkus-java8
   - id: redhat/quarkus-java8
     repository:
       url: https://github.com/redhat-developer/vscode-quarkus
@@ -264,7 +264,7 @@ plugins:
       - https://download.jboss.org/jbosstools/static/jdt.ls/stable/java-0.63.0-2222.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-java-debug/vscode-java-debug-0.26.0.vsix
 
-  # redhat/vscode-wsdl2rest/0.0.11
+  # redhat/vscode-wsdl2rest
   - repository:
       url: https://github.com/camel-tooling/vscode-wsdl2rest
       revision: 0.0.11
@@ -276,7 +276,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-wsdl2rest/vscode-wsdl2rest-0.0.11-106.vsix
 
-  # redhat/fabric8-analytics/0.2.1
+  # redhat/fabric8-analytics
   - repository:
       url: https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension
       revision: 0.1.0
@@ -291,7 +291,7 @@ plugins:
     extensions:
       - https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension/releases/download/0.2.1/fabric8-analytics-0.2.1.vsix
 
-  # redhat/vscode-tekton-pipelines/0.2.0
+  # redhat/vscode-tekton-pipelines
   - repository:
       url: https://github.com/redhat-developer/vscode-tekton
       revision: v0.2.0
@@ -311,14 +311,14 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-kubernetes-tools/vscode-kubernetes-tools-1.2.0.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
 
-  # redhat/project-initializer/0.0.10
+  # redhat/project-initializer
   - repository:
       url: https://github.com/redhat-developer/vscode-project-initializer
       revision: v0.0.10
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-project-initializer/project-initializer-0.0.10-582.vsix
 
-  # redhat/vscode-openshift-connector/0.2.0
+  # redhat/vscode-openshift-connector
   - repository:
       url: https://github.com/redhat-developer/vscode-openshift-tools
       revision: v0.2.0
@@ -337,7 +337,7 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
       - https://github.com/che-incubator/che-theia-openshift-auth/releases/download/0.0.1/che-openshift-authentication-plugin-0.0.1.vsix
 
-  # redhat/vscode-yaml/0.11.1
+  # redhat/vscode-yaml
   - repository:
       url: https://github.com/redhat-developer/vscode-yaml
       revision: 0.11.1
@@ -351,7 +351,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.11.1.vsix
 
-  # redhat/java11/0.69.0
+  # redhat/java11
   - id: redhat/java11
     repository:
       url: https://github.com/redhat-developer/vscode-java
@@ -373,7 +373,7 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-java-debug/vscode-java-debug-0.26.0.vsix
       - https://open-vsx.org/api/vscjava/vscode-java-test/0.24.0/file/vscjava.vscode-java-test-0.24.0.vsix
 
-  # redhat/java8/0.63.0
+  # redhat/java8
   - id: redhat/java8
     repository:
       url: https://github.com/redhat-developer/vscode-java
@@ -392,7 +392,7 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-java-debug/vscode-java-debug-0.26.0.vsix
       - https://open-vsx.org/api/vscjava/vscode-java-test/0.24.0/file/vscjava.vscode-java-test-0.24.0.vsix
 
-  # felixfbecker/php-debug/1.13.0
+  # felixfbecker/php-debug
   - repository:
       url: https://github.com/felixfbecker/vscode-php-debug
       revision: v1.13.0
@@ -408,7 +408,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-php-debug/php-debug-1.13.0.vsix
 
-  # redhat/mta-vscode-extension/0.0.56
+  # redhat/mta-vscode-extension
   - repository:
       url: https://github.com/windup/rhamt-vscode-extension
       revision: ece569b2a6222ee6b2a16ede8241e4817a574ea4
@@ -438,7 +438,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/adapters/stable/mta-vscode-extension/mta-vscode-extension-0.0.56-769.vsix
 
-  # redhat/vscode-apache-camel/0.0.29
+  # redhat/vscode-apache-camel
   - repository:
       url: https://github.com/camel-tooling/camel-lsp-client-vscode
       revision: 0.0.29
@@ -451,7 +451,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-apache-camel/vscode-apache-camel-0.0.29-72.vsix
 
-  # redhat/vscode-xml/0.14.0
+  # redhat/vscode-xml
   - repository:
       url: https://github.com/redhat-developer/vscode-xml
       revision: 0.13.0
@@ -465,14 +465,14 @@ plugins:
     extensions:
       - https://github.com/redhat-developer/codeready-workspaces-vscode-extensions/releases/download/v356aec7/vscode-xml-0.14.0.vsix
 
-  # redhat/vscode-didact/0.1.18
+  # redhat/vscode-didact
   - repository:
       url: https://github.com/redhat-developer/vscode-didact
       revision: 0.1.18
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-didact/vscode-didact-0.1.18-47.vsix
 
-  # ms-kubernetes-tools/vscode-kubernetes-tools/1.2.1
+  # ms-kubernetes-tools/vscode-kubernetes-tools
   - repository:
       url: https://github.com/Azure/vscode-kubernetes-tools
       revision: 1.2.1
@@ -486,14 +486,14 @@ plugins:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-kubernetes-tools/vscode-kubernetes-tools-1.2.1.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
 
-  # rogalmic/bash-debug/0.3.9
+  # rogalmic/bash-debug
   - repository:
       url: https://github.com/rogalmic/vscode-bash-debug
       revision: v0.3.9
     extensions:
       - https://open-vsx.org/api/rogalmic/bash-debug/0.3.9/file/rogalmic.bash-debug-0.3.9.vsix
 
-  # redhat-developer/netcoredbg-theia-plugin/0.0.1
+  # redhat-developer/netcoredbg-theia-plugin
   # ( need to fix the plugin version inside package.json and rebuild )
   - id: redhat-developer/netcoredbg-theia-plugin
     repository:
@@ -508,7 +508,7 @@ plugins:
     extensions:
       - https://github.com/redhat-developer/netcoredbg-theia-plugin/releases/download/v0.0.3/netcoredbg_theia_plugin.theia
 
-  # redhat-developer/che-omnisharp-plugin/0.0.1
+  # redhat-developer/che-omnisharp-plugin
   # ( need to fix the plugin version inside package.json and rebuild )
   - id: redhat-developer/che-omnisharp-plugin
     repository:
@@ -526,7 +526,7 @@ plugins:
     extensions:
       - https://github.com/redhat-developer/omnisharp-theia-plugin/releases/download/v0.0.6/omnisharp_theia_plugin.theia
 
-  # rust-lang/rust/0.7.8
+  # rust-lang/rust
   - repository:
       url: https://github.com/rust-lang/vscode-rust
       revision: v0.7.8
@@ -539,7 +539,7 @@ plugins:
     extensions:
       - https://github.com/rust-lang/vscode-rust/releases/download/v0.7.8/rust.vsix
 
-  # scalameta/metals/1.9.6
+  # scalameta/metals
   - repository:
       url: https://github.com/scalameta/metals-vscode
       revision: v1.9.6
@@ -560,7 +560,7 @@ plugins:
       - https://github.com/scalameta/metals-vscode/releases/download/v1.9.6/scalameta.metals-1.9.6.vsix
       - https://github.com/scala/vscode-scala-syntax/releases/download/0.4.5/scala-lang.scala-0.4.5.vsix
 
-  # sonarsource/sonarlint-vscode/1.16.0
+  # sonarsource/sonarlint-vscode
   - repository:
       url: https://github.com/SonarSource/sonarlint-vscode
       revision: 1.16.0
@@ -576,14 +576,14 @@ plugins:
     extensions:
       - https://github.com/SonarSource/sonarlint-vscode/releases/download/1.16.0/sonarlint-vscode-1.16.0.vsix
 
-  # atlassian/atlascode/2.6.6
+  # atlassian/atlascode
   - repository:
       url: https://bitbucket.org/atlassianlabs/atlascode
       revision: 2.6.6
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/atlascode/atlascode-2.6.6.vsix
 
-  # broadcommfd/cobol-language-support/0.16.1
+  # broadcommfd/cobol-language-support
   - repository:
       url: https://github.com/eclipse/che-che4z-lsp-for-cobol
       revision: 0.16.1
@@ -601,7 +601,7 @@ plugins:
     extensions:
       - https://open-vsx.org/api/BroadcomMFD/cobol-language-support/0.16.1/file/BroadcomMFD.cobol-language-support-0.16.1.vsix
 
-  # broadcommfd/debugger-for-mainframe/1.2.0
+  # broadcommfd/debugger-for-mainframe
   - id: broadcommfd/debugger-for-mainframe/1.2.0
     isClosedSource: true
     repository:
@@ -616,7 +616,7 @@ plugins:
     extensions:
       - https://open-vsx.org/api/BroadcomMFD/debugger-for-mainframe/1.2.0/file/BroadcomMFD.debugger-for-mainframe-1.2.0.vsix
 
-  # broadcommfd/hlasm-language-support/0.11.1
+  # broadcommfd/hlasm-language-support
   - repository:
       url: https://github.com/eclipse/che-che4z-lsp-for-hlasm
       directory: clients/vscode-hlasmplugin/
@@ -624,14 +624,14 @@ plugins:
     extensions:
       - https://github.com/eclipse/che-che4z-lsp-for-hlasm/releases/download/0.11.1/hlasm-language-support-0.11.1-alpine.vsix
 
-  # broadcommfd/explorer-for-endevor/0.11.0
+  # broadcommfd/explorer-for-endevor
   - repository:
       url: https://github.com/eclipse/che-che4z-explorer-for-endevor
       revision: 0.10.0
     extensions:
       - https://github.com/eclipse/che-che4z-explorer-for-endevor/releases/download/0.11.0/explorer-for-endevor-0.11.0.vsix
 
-  # zxh404/vscode-proto3/0.4.2
+  # zxh404/vscode-proto3
   - repository:
       url: https://github.com/zxh0/vscode-proto3
       revision: c4d9eeb54294e3cee86254261edf036901f29dec
@@ -646,7 +646,7 @@ plugins:
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-proto3/vscode-proto3-0.4.2-c4d9ee.vsix
 
-  # timonwong/shellcheck/0.10.1
+  # timonwong/shellcheck
   - repository:
       url: https://github.com/timonwong/vscode-shellcheck
       revision: v0.10.1
@@ -659,7 +659,7 @@ plugins:
     extensions:
       - https://open-vsx.org/api/timonwong/shellcheck/0.10.1/file/timonwong.shellcheck-0.10.1.vsix
 
-  # sdkbox/vscode-libra-move/0.0.10
+  # sdkbox/vscode-libra-move
   - repository:
       url: https://github.com/pizzafactory-contorno/vscode-libra-move/
       revision: v0.0.10-ddc0d3d
@@ -674,7 +674,7 @@ plugins:
     extensions:
       - https://github.com/pizzafactory-contorno/vscode-libra-move/releases/download/v0.0.10-ddc0d3d/vscode-libra-move-0.0.10.vsix
 
-  # pizzafactory/xtend-lang/0.1.0
+  # pizzafactory/xtend-lang
   - repository:
       url: https://github.com/PizzaFactory/xtend-ide-extensions/
       revision: v0.1.0
@@ -688,7 +688,7 @@ plugins:
     extensions:
       - https://github.com/PizzaFactory/xtend-ide-extensions/releases/download/v0.1.0/xtend-lang-0.1.0.vsix
 
-  # pizzafactory/xtext-lang/0.4.0
+  # pizzafactory/xtext-lang
   - repository:
       url: https://github.com/PizzaFactory/xtext-ide-extensions/
       revision: v0.4.0
@@ -702,7 +702,7 @@ plugins:
     extensions:
       - https://github.com/PizzaFactory/xtext-ide-extensions/releases/download/v0.4.0/xtext-lang-0.4.0.vsix
 
-  # microprofile-community/mp-starter-vscode-ext/0.2.0
+  # microprofile-community/mp-starter-vscode-ext
   - repository:
       url: https://github.com/MicroShed/mp-starter-vscode-ext
       revision: 0.2.0
@@ -711,7 +711,7 @@ plugins:
     extensions:
       - https://github.com/MicroShed/mp-starter-vscode-ext/releases/download/0.2.0/mp-starter-vscode-ext-0.2.0.vsix
 
-  # dart-code/dart-code/3.15.0-dev
+  # dart-code/dart-code
   - id: dart-code/dart-code
     repository:
       url: https://github.com/gattytto/Dart-Code
@@ -728,14 +728,14 @@ plugins:
       - https://github.com/gattytto/Dart-Code/releases/download/v3.15.0-che/dart-code-3.15.0-dev-realpathSync.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
 
-  # lfs/vscode-emacs-friendly/0.9.0
+  # lfs/vscode-emacs-friendly
   - repository:
       url: https://github.com/SebastianZaha/vscode-emacs-friendly
       revision: 660a6102103745f8e9e5affaa06a29e73ce9065e
     extensions:
       - https://github.com/che-incubator/vscode-emacs-friendly/releases/download/0.9.0/lfs.vscode-emacs-friendly-0.9.0.vsix
 
-  # castwide/solargraph/0.22.0
+  # castwide/solargraph
   - repository:
       url: https://github.com/castwide/vscode-solargraph
       revision: 212e76d
@@ -751,7 +751,7 @@ plugins:
     extensions:
       - https://open-vsx.org/api/castwide/solargraph/0.22.0/file/castwide.solargraph-0.22.0.vsix
 
-  # zowe/vscode-extension-for-zowe/1.8.0
+  # zowe/vscode-extension-for-zowe
   - repository:
       url: https://github.com/zowe/vscode-extension-for-zowe
       revision: v1.8.0
@@ -767,7 +767,7 @@ plugins:
     extensions:
       - https://github.com/eclipse/che-che4z/releases/download/v2.1.0/vscode-extension-for-zowe-v1.8.0-che.vsix
 
-  # mads-hartmann/bash-ide-vscode/1.10.2
+  # mads-hartmann/bash-ide-vscode
   - repository:
       url: https://github.com/bash-lsp/bash-language-server
       revision: vscode-client-1.10.2
@@ -777,14 +777,14 @@ plugins:
     extensions:
       - https://open-vsx.org/api/mads-hartmann/bash-ide-vscode/1.10.2/file/mads-hartmann.bash-ide-vscode-1.10.2.vsix
 
-  # esbenp/prettier-vscode/5.8.0
+  # esbenp/prettier-vscode
   - repository:
       url: https://github.com/prettier/prettier-vscode
       revision: v5.8.0
     extensions:
       - https://open-vsx.org/api/esbenp/prettier-vscode/5.8.0/file/esbenp.prettier-vscode-5.8.0.vsix
 
-  # dbaeumer/vscode-eslint/2.1.1
+  # dbaeumer/vscode-eslint
   - repository:
       url: https://github.com/microsoft/vscode-eslint
       revision: 1e15d3495da89072d48cf583d48d92829f0c4b82
