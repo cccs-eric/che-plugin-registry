@@ -19,7 +19,7 @@ plugins:
       name: vscode-node-debug
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://open-vsx.org/api/ms-vscode/node-debug2/1.42.5/file/ms-vscode.node-debug2-1.42.5.vsix
       - https://open-vsx.org/api/ms-vscode/node-debug/1.44.8/file/ms-vscode.node-debug-1.44.8.vsix
@@ -36,7 +36,7 @@ plugins:
       directory: node
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://open-vsx.org/api/vscode/typescript-language-features/1.49.3/file/vscode.typescript-language-features-1.49.3.vsix
 
@@ -49,7 +49,7 @@ plugins:
       name: vscode-bazel
       memoryLimit: 2Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: bazelcache
           path: "/home/theia/.cache/bazel"
@@ -67,7 +67,7 @@ plugins:
       name: vetur
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/vuejs/vetur/releases/download/v0.26.1/vetur-0.26.1.vsix
 
@@ -87,7 +87,7 @@ plugins:
       name: vscode-vale
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-vale/vale-0.9.1.vsix
 
@@ -101,7 +101,7 @@ plugins:
       name: cpp-plugins
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/cdt-vscode/cdt-vscode-0.0.7-75cf95.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/cdt-gdb-vscode/cdt-gdb-vscode-0.0.91-2cbbb8.vsix
@@ -116,7 +116,7 @@ plugins:
       directory: php
       memoryLimit: 1Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-intelephense/vscode-intelephense-client-1.5.4.vsix
 
@@ -130,7 +130,7 @@ plugins:
       name: vscode-python
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix
 
@@ -145,7 +145,7 @@ plugins:
       name: asciidoctor-vscode
       memoryLimit: 128Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         # this is a workaround for openshift3
         - name: documents
@@ -170,7 +170,7 @@ plugins:
       name: vscode-go
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       env:
         - name: GOPATH
           value: /go:$(CHE_PROJECTS_ROOT)
@@ -189,7 +189,7 @@ plugins:
       name: vscode-haskell
       memoryLimit: 3Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://open-vsx.org/api/haskell/haskell/1.1.0/file/haskell.haskell-1.1.0.vsix
       - https://open-vsx.org/api/justusadam/language-haskell/3.3.0/file/justusadam.language-haskell-3.3.0.vsix
@@ -204,7 +204,7 @@ plugins:
       name: vscode-flutter
       memoryLimit: 2Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/dart-code/flutter/releases/download/v3.14.1/flutter-3.14.1.vsix
       - https://github.com/gattytto/dart-code/releases/download/v3.15.0-che/dart-code-3.15.0-dev-realpathSync.vsix
@@ -219,7 +219,7 @@ plugins:
       name: vscode-camelk
       memoryLimit: 1Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-camelk/vscode-camelk-0.0.19-64.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-kubernetes-tools/vscode-kubernetes-tools-1.2.1.vsix
@@ -235,7 +235,7 @@ plugins:
       name: vscode-quarkus
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
       - name: m2
         path: "/home/theia/.m2"
@@ -255,7 +255,7 @@ plugins:
       directory: java8
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
       - name: m2
         path: "/home/theia/.m2"
@@ -272,7 +272,7 @@ plugins:
       directory: java8
       memoryLimit: 256Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-wsdl2rest/vscode-wsdl2rest-0.0.11-106.vsix
 
@@ -287,7 +287,7 @@ plugins:
       name: dependency-analytics
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/fabric8-analytics/fabric8-analytics-vscode-extension/releases/download/0.2.1/fabric8-analytics-0.2.1.vsix
 
@@ -302,7 +302,7 @@ plugins:
       name: vscode-tekton
       memoryLimit: 384Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: "kube"
           path: "/home/theia/.kube"
@@ -327,7 +327,7 @@ plugins:
       name: vscode-openshift-connector
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: "kube"
           path: "/home/theia/.kube"
@@ -347,7 +347,7 @@ plugins:
       name: vscode-yaml
       memoryLimit: 256Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.11.1.vsix
 
@@ -364,7 +364,7 @@ plugins:
       name: vscode-java
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: m2
           path: "/home/theia/.m2"
@@ -383,7 +383,7 @@ plugins:
       name: vscode-java
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: m2
           path: "/home/theia/.m2"
@@ -404,7 +404,7 @@ plugins:
       name: php-debugger
       memoryLimit: 256Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-php-debug/php-debug-1.13.0.vsix
 
@@ -419,7 +419,7 @@ plugins:
       name: mta-extension
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       mountSources: true
       volumeMounts:
         - name: mta-vscode 
@@ -447,7 +447,7 @@ plugins:
       name: vscode-apache-camel
       memoryLimit: 300Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/stable/vscode-apache-camel/vscode-apache-camel-0.0.29-72.vsix
 
@@ -461,7 +461,7 @@ plugins:
       name: vscode-xml
       memoryLimit: 768Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/redhat-developer/codeready-workspaces-vscode-extensions/releases/download/v356aec7/vscode-xml-0.14.0.vsix
 
@@ -481,7 +481,7 @@ plugins:
       name: vscode-kubernetes-tools
       memoryLimit: 1Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-kubernetes-tools/vscode-kubernetes-tools-1.2.1.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
@@ -504,7 +504,7 @@ plugins:
       name: theia-netcoredbg
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/redhat-developer/netcoredbg-theia-plugin/releases/download/v0.0.3/netcoredbg_theia_plugin.theia
 
@@ -519,7 +519,7 @@ plugins:
       name: theia-omnisharp
       memoryLimit: 1Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: nuget
           path: "/home/theia/.nuget"
@@ -535,7 +535,7 @@ plugins:
       name: vscode-rust
       memoryLimit: 1Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/rust-lang/vscode-rust/releases/download/v0.7.8/rust.vsix
 
@@ -548,7 +548,7 @@ plugins:
       name: vscode-metals
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: sbt
           path: "/home/theia/.sbt"
@@ -569,7 +569,7 @@ plugins:
       name: vscode-sonarlint
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: m2
           path: "/home/theia/.m2"
@@ -593,7 +593,7 @@ plugins:
       name: cobol-language-support
       memoryLimit: 1Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       mountSources: true
       env:
         - name: ZOWE_CLI_HOME
@@ -610,7 +610,7 @@ plugins:
       directory: java
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       name: debugger-for-mainframe
       mountSources: true
     extensions:
@@ -642,7 +642,7 @@ plugins:
       name: vscode-proto3
       memoryLimit: 256Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-proto3/vscode-proto3-0.4.2-c4d9ee.vsix
 
@@ -655,7 +655,7 @@ plugins:
       name: shellcheck
       memoryLimit: 128Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://open-vsx.org/api/timonwong/shellcheck/0.10.1/file/timonwong.shellcheck-0.10.1.vsix
 
@@ -670,7 +670,7 @@ plugins:
       name: vscode-libra-move
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/pizzafactory-contorno/vscode-libra-move/releases/download/v0.0.10-ddc0d3d/vscode-libra-move-0.0.10.vsix
 
@@ -684,7 +684,7 @@ plugins:
       name: vscode-xtend-lang
       memoryLimit: 768Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/PizzaFactory/xtend-ide-extensions/releases/download/v0.1.0/xtend-lang-0.1.0.vsix
 
@@ -698,7 +698,7 @@ plugins:
       name: vscode-xtext-lang
       memoryLimit: 768Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/PizzaFactory/xtext-ide-extensions/releases/download/v0.4.0/xtext-lang-0.4.0.vsix
 
@@ -723,7 +723,7 @@ plugins:
       name: vscode-dart
       memoryLimit: 2Gi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
     extensions:
       - https://github.com/gattytto/Dart-Code/releases/download/v3.15.0-che/dart-code-3.15.0-dev-realpathSync.vsix
       - https://download.jboss.org/jbosstools/vscode/3rdparty/vscode-yaml/vscode-yaml-0.8.0.vsix
@@ -744,7 +744,7 @@ plugins:
       name: vscode-ruby
       memoryLimit: 1500Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       volumeMounts:
         - name: solargraph
           path: "/home/theia/.solargraph"
@@ -760,7 +760,7 @@ plugins:
       name: zowe-explorer
       memoryLimit: 512Mi
       cpuLimit: 500m
-      cpuRequest: 200m
+      cpuRequest: 30m
       env:
        - name: ZOWE_CLI_HOME
          value: /projects/.zowe
