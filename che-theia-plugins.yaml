@@ -441,7 +441,7 @@ plugins:
   # redhat/vscode-apache-camel
   - repository:
       url: https://github.com/camel-tooling/camel-lsp-client-vscode
-      revision: 0.0.29
+      revision: 0.0.30
     sidecar:
       directory: java
       name: vscode-apache-camel
@@ -449,7 +449,7 @@ plugins:
       cpuLimit: 500m
       cpuRequest: 30m
     extensions:
-      - https://download.jboss.org/jbosstools/vscode/stable/vscode-apache-camel/vscode-apache-camel-0.0.29-72.vsix
+      - https://download.jboss.org/jbosstools/vscode/stable/vscode-apache-camel/vscode-apache-camel-0.0.30-103.vsix
 
   # redhat/vscode-xml
   - repository:
@@ -494,7 +494,7 @@ plugins:
       - https://open-vsx.org/api/rogalmic/bash-debug/0.3.9/file/rogalmic.bash-debug-0.3.9.vsix
 
   # redhat-developer/netcoredbg-theia-plugin
-  # ( need to fix the plugin version inside package.json and rebuild )
+  # ( need to fix the plugin version inside package.json )
   - id: redhat-developer/netcoredbg-theia-plugin
     repository:
       url: https://github.com/redhat-developer/netcoredbg-theia-plugin
@@ -509,7 +509,7 @@ plugins:
       - https://github.com/redhat-developer/netcoredbg-theia-plugin/releases/download/v0.0.3/netcoredbg_theia_plugin.theia
 
   # redhat-developer/che-omnisharp-plugin
-  # ( need to fix the plugin version inside package.json and rebuild )
+  # ( need to fix the plugin version inside package.json )
   - id: redhat-developer/che-omnisharp-plugin
     repository:
       url: https://github.com/redhat-developer/omnisharp-theia-plugin
@@ -542,7 +542,7 @@ plugins:
   # scalameta/metals
   - repository:
       url: https://github.com/scalameta/metals-vscode
-      revision: v1.9.6
+      revision: v1.9.9
     sidecar:
       directory: scala
       name: vscode-metals
@@ -557,7 +557,7 @@ plugins:
         - name: cache
           path: "/home/theia/.cache"
     extensions:
-      - https://github.com/scalameta/metals-vscode/releases/download/v1.9.6/scalameta.metals-1.9.6.vsix
+      - https://github.com/scalameta/metals-vscode/releases/download/v1.9.9/scalameta.metals-1.9.9.vsix
       - https://github.com/scala/vscode-scala-syntax/releases/download/0.4.5/scala-lang.scala-0.4.5.vsix
 
   # sonarsource/sonarlint-vscode
@@ -602,7 +602,7 @@ plugins:
       - https://open-vsx.org/api/BroadcomMFD/cobol-language-support/0.16.1/file/BroadcomMFD.cobol-language-support-0.16.1.vsix
 
   # broadcommfd/debugger-for-mainframe
-  - id: broadcommfd/debugger-for-mainframe/1.2.0
+  - id: broadcommfd/debugger-for-mainframe/1.4.0
     isClosedSource: true
     repository:
       url: https://github.com/BroadcomMFD/debugger-for-mainframe
@@ -614,7 +614,7 @@ plugins:
       name: debugger-for-mainframe
       mountSources: true
     extensions:
-      - https://open-vsx.org/api/BroadcomMFD/debugger-for-mainframe/1.2.0/file/BroadcomMFD.debugger-for-mainframe-1.2.0.vsix
+      - https://open-vsx.org/api/BroadcomMFD/debugger-for-mainframe/1.4.0/file/BroadcomMFD.debugger-for-mainframe-1.4.0.vsix
 
   # broadcommfd/hlasm-language-support
   - repository:
@@ -627,9 +627,9 @@ plugins:
   # broadcommfd/explorer-for-endevor
   - repository:
       url: https://github.com/eclipse/che-che4z-explorer-for-endevor
-      revision: 0.10.0
+      revision: 0.11.1
     extensions:
-      - https://github.com/eclipse/che-che4z-explorer-for-endevor/releases/download/0.11.0/explorer-for-endevor-0.11.0.vsix
+      - https://github.com/eclipse/che-che4z-explorer-for-endevor/releases/download/0.11.1/explorer-for-endevor-0.11.1.vsix
 
   # zxh404/vscode-proto3
   - repository:
@@ -754,7 +754,7 @@ plugins:
   # zowe/vscode-extension-for-zowe
   - repository:
       url: https://github.com/zowe/vscode-extension-for-zowe
-      revision: v1.8.0
+      revision: v1.11.0
     sidecar:
       directory: node
       name: zowe-explorer
@@ -765,7 +765,7 @@ plugins:
        - name: ZOWE_CLI_HOME
          value: /projects/.zowe
     extensions:
-      - https://github.com/eclipse/che-che4z/releases/download/v2.1.0/vscode-extension-for-zowe-v1.8.0-che.vsix
+      - https://github.com/eclipse/che-che4z/releases/download/v2.2.0/vscode-extension-for-zowe-1.11.0-che.vsix
 
   # mads-hartmann/bash-ide-vscode
   - repository:
